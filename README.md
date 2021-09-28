@@ -21,6 +21,11 @@ _23 of June 2019_
 
 <br/>
 
+### Note from CollegiumXR:
+You can now skip building the librealsense wrapper as it is server from CI on JFrog 
+https://egiintel.jfrog.io/ui/repos/tree/General/librealsense
+just download latest artifact (or any that is not broken) and save yourself a hassle.
+
 ## Introduction
 
 The project was tested in the following environments.
@@ -75,6 +80,11 @@ According to [this](https://github.com/IntelRealSense/librealsense/issues/4155#i
 ![](https://github.com/GeorgeAdamon/quest-realsense/blob/master/resources/img-scripting-backend.png)
 
 ## Step 2: Building the librealsense.aar Android library
+### Before Building
+NOTE : If you arent adding any custom features to the source of realsense 2 library you dont need to build the wrapper yourself just download the one provided by the intel automatic builds. 
+You can now skip building the librealsense wrapper as it is server from CI on JFrog 
+https://egiintel.jfrog.io/ui/repos/tree/General/librealsense
+just download latest artifact (or any that is not broken) and save yourself a hassle.
 ### Build Process
 In general, in order to allow a Unity project to access the RealSense cameras when targeting a platform other than Windows, the appropriate wrappers for this platform need to be built as Native Plugins first, and included in the Unity project.
 
